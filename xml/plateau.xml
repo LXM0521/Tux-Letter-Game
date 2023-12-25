@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tux:plateau
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:tux='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux file:///Users/lxm/NetBeansProjects/Tux/src/tux/xml/plateau.xsd'>
+    <tux:dimensions>
+        <tux:height>60</tux:height>
+        <tux:width>100</tux:width>
+        <tux:depth>100</tux:depth>
+    </tux:dimensions>
+    <tux:mapping>
+        <tux:textureBottom>textures/floor/grass2.png</tux:textureBottom>
+        <tux:textureEast>textures/skybox/interstellar/east.png</tux:textureEast>
+        <tux:textureWest>textures/skybox/interstellar/west.png</tux:textureWest>
+        <tux:textureNorth>textures/skybox/interstellar/north.png</tux:textureNorth>
+    </tux:mapping>
+    <tux:pion>une url</tux:pion>
+</tux:plateau>
+

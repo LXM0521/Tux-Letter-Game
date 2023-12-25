@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pro:profil
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:pro='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux file:///Users/lxm/NetBeansProjects/Tux/src/tux/xml/profil.xsd'>
+    <pro:nom>Alban</pro:nom>
+    <pro:avatar>conan.jpg</pro:avatar>
+    <pro:anniversaire>2006-05-08</pro:anniversaire>
+    <pro:parties>
+        <pro:partie date="2013-12-10">
+            <pro:temps>20.0</pro:temps>
+            <pro:mot numNiveau="1">salut</pro:mot>
+        </pro:partie>
+        <pro:partie date="2013-12-10" trouvé="75%">
+            <pro:mot numNiveau="2">salutation</pro:mot>
+        </pro:partie>
+        <pro:partie date="2013-12-10">
+            <pro:temps>20.0</pro:temps>
+            <pro:mot numNiveau="2">apprendre</pro:mot>
+        </pro:partie>
+    </pro:parties>
+
+</pro:profil>

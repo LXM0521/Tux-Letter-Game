@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<di:dictionnaire xmlns:di="http://myGame/tux" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://myGame/tux file:///Users/lxm/NetBeansProjects/Tux/src/tux/xml/dico.xsd">
+    
+    <!-- MOT NIVEAU 1 -->
+    <di:mot numNiveau="1">salut</di:mot>
+    <di:mot numNiveau="1">alphabet</di:mot>
+    <di:mot numNiveau="1">niveau</di:mot>
+    
+    <!-- MOT NIVEAU 2 -->
+    <di:mot numNiveau="2">bienvenue</di:mot>
+    <di:mot numNiveau="2">salutation</di:mot>
+    <di:mot numNiveau="2">apprendre</di:mot>
+    
+    <!-- MOT NIVEAU 3 -->
+    <di:mot numNiveau="3">transformation</di:mot>
+    <di:mot numNiveau="3">affectation</di:mot>
+    <di:mot numNiveau="3">apprentissage</di:mot>
+    
+    <!-- MOT NIVEAU 4 -->
+    <di:mot numNiveau="4">externalisation</di:mot>
+    <di:mot numNiveau="4">gouvernement</di:mot>
+    
+    <!-- MOT NIVEAU 5 -->
+    <di:mot numNiveau="5">anticonstitutionnellement</di:mot>
+    <di:mot numNiveau="5">intergouvernementalisation</di:mot>
+    <di:mot numNiveau="5">déconstitutionnalisassions</di:mot>
+    
+
+
+</di:dictionnaire>

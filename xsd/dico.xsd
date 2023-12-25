@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xsd:schema version="1.0"
+           targetNamespace="http://myGame/tux"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xmlns:tux="http://myGame/tux"
+           elementFormDefault="qualified">
+
+    
+    <xsd:element name="dictionnaire" type="tux:Dictionnaire"/> 
+    
+    <!--DICTIONNAIRE
+    -> CONTIENT DES NIVEAUX-->
+    <xsd:complexType name="Dictionnaire">
+        <xsd:sequence>
+            <xsd:element name="mot" type="tux:Mot" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <!-- WORD
+    Un mot avec un numero de niveau
+    -->
+    <xsd:complexType name="Mot">
+        <xsd:simpleContent>
+            <xsd:extension base="tux:MotDef">
+                <xsd:attribute name="numNiveau" type="tux:NumNiveau"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <!--NUMNIVEAU
+    -> TYPE SIMPLE NAME NUMNIVEAU AVEC RESTRICTION MIN INCLUSIVE 1 MAX INCLUSIVE 5
+    -> cONTINET DES MOTS AVEC MINOCCURS 1 MAX OCCURS UNBOUNDED-->
+    <xsd:simpleType name="NumNiveau">
+        <xsd:restriction base="xsd:int">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="5"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <!--WORDDEF
+    -> TYPE STRINGMOTS AVEC RESTRIUCTIONS SUR LES CARACTERES SPECIAUX-->
+    <xsd:simpleType name="MotDef">
+        <xsd:restriction base="xsd:string">
+             <xsd:pattern value="[a-zA-Z0-9]*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+       
+</xsd:schema>
